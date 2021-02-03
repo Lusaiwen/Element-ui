@@ -1,0 +1,22 @@
+@mixin  untils-clearfix {
+    $selector: &;
+    @at-root{
+        #{$selector}::after {
+            display: block;
+            content: "";
+        }
+        #{$selector}::after {
+            clear: both;
+        }
+    }
+}
+
+
+
+@mixin utils-user-select ($value) {
+    -moz-user-select:none; /* Firefox私有属性 */
+    -webkit-user-select:none; /* WebKit内核私有属性 */
+    -ms-user-select:none; /* IE私有属性(IE10及以后) */
+    -khtml-user-select:none; /* KHTML内核私有属性 */
+    -o-user-select:none; /* Opera私有属性 */
+  }

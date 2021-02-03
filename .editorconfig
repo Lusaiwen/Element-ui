@@ -5,3 +5,16 @@ end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
 max_line_length = 100
+# 使用单引号
+quote_type = single
+# Linux换行符
+end_of_line = lf
+# 结尾插入新行
+insert_final_newline = true
+# 去除结尾空格
+trim_trailing_whitespace = true
+
+# 对后缀名为 md 的文件生效
+[*.md]
+trim_trailing_whitespace = false
+
